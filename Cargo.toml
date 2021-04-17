@@ -1,0 +1,16 @@
+[package]
+name = "slurp-x"
+version = "0.1.0"
+authors = ["keke"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = 'abort'
+
+[dependencies]
+xcb = {version = "0.9.0", features = ["xkb", "shape"]}
