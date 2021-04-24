@@ -144,5 +144,5 @@ fn main() {
         };
     }
 
-    println!("{}{}{}{}", start_x, start_y, width, height);
+    println!("x{} y{} w{} h{}", start_x, start_y, width, height);
 }
